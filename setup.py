@@ -25,7 +25,7 @@ install_requires = [
     # https://github.com/scikit-image/scikit-image/issues/3655
     # 'numpy>=1.15.1,!=1.50.0',
     # numpy.ufunc size changed, may indicate binary incompatibility. 
-    'numpy>=1.16.1,!=1.16.2,<1.20,'
+    'numpy>=1.16.1,!=1.16.2,<1.20',
     'Cython>=0.26.0',
 ]
 
