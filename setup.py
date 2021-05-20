@@ -674,8 +674,10 @@ else:
     ext_args = defaultdict(list)
     ext_args['include_dirs'].append(numpy.get_include())
 
+    print("Print include flags")
     for flag in pkgconfig('--cflags-only-I'):
-        ext_args['include_dirs'].append(flag[2:])
+        print(str(flag[2:]))
+        ext_args['include_dirs'].append((str(flag[2:])))
 
     # OpenNI?
     # "-I/usr/include/openni"
