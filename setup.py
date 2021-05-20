@@ -675,6 +675,7 @@ else:
     ext_args['include_dirs'].append(numpy.get_include())
 
     print("Print include flags")
+    print(str(pcl_libs))
     for flag in pkgconfig('--cflags-only-I'):
         print(str(flag[2:]))
         ext_args['include_dirs'].append((str(flag[2:])))
