@@ -665,10 +665,10 @@ else:
                     "segmentation", "surface", "tracking", "visualization"]
     else:
         # version 1.8
-        pcl_libs = ["2d", "common", "features", "filters", "geometry",
-                    "io", "kdtree", "keypoints", "ml", "octree", "outofcore", "people",
+        pcl_libs = ["common", "features", "filters", "geometry",
+                    "io", "kdtree", "keypoints", "ml", "octree",
                     "recognition", "registration", "sample_consensus", "search",
-                    "segmentation", "stereo", "surface", "tracking", "visualization"]
+                    "segmentation", "stereo", "surface", "tracking"]
     pcl_libs = ["pcl_%s%s" % (lib, pcl_version) for lib in pcl_libs]
 
     ext_args = defaultdict(list)
